@@ -1,4 +1,4 @@
-#What should I do? (WSID) beta 1 by src_guy
+#What should I do? (WSID) beta 2 by src_guy
 #2023
 
 from tkinter import *
