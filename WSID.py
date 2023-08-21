@@ -1,4 +1,4 @@
-#What should I do? (WSID) beta 3 by src_guy
+#What should I do? (WSID) beta 4 by src_guy
 #2023
 
 from tkinter import *
@@ -7,7 +7,7 @@ import tkinter as tk
 
 root = tk.Tk()
 
-root.geometry("300x200")
+root.geometry("300x210")
 
 root.title("What Should I Do?")
 
@@ -70,9 +70,10 @@ def todo_list():
     Label(todo_menu_list, text=file.read()).place(relx=0.5, rely=0.5, anchor=CENTER)
 
 Label(root, text="What should I do?", font=("System", 24)).place(x=0, y=2)
-Button(root, text="Sticky notes", command=sticky).place(x=0, y=50)
-Button(root, text="To do creator", command=todo).place(x=0, y=100)
-Button(root, text="To do list", command=todo_list).place(x=100, y=100)
-Button(root, text="Exit", bg="red", command=root.destroy).place(x=0, y=150)
+Label(root, text="by src_guy").place(x=0, y=35)
+Button(root, text="Sticky notes", command=sticky).place(x=0, y=70)
+Button(root, text="To do creator", command=todo).place(x=0, y=120)
+Button(root, text="To do list", command=todo_list).place(x=100, y=120)
+Button(root, text="Exit", bg="red", command=root.destroy).place(x=0, y=170)
 
 root.mainloop()
